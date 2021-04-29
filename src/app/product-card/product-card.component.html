@@ -1,0 +1,39 @@
+<div *ngIf="product.Name" class="card">
+    <img  class="card-img-top" [src]="product.imageURl" height="395px" width="395px" alt="{{ product.title }}">
+    <div class="card-body">
+      <h4 class="card-title">{{product.Name}}</h4>
+      <p class="card-text">{{ product.price | currency:'USD':true }}</p>
+      <p class="card-text">{{product.Description}}</p>
+      <p>Rating:
+        <ngb-rating [max]="5" [(rate)]="product.Rating" [readonly]="true"></ngb-rating>
+      </p>
+    </div>
+    <!-- <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+    <p>Rate: </p> -->
+    
+    <!-- <div *ngIf="showActions" class="card-footer">
+      <button 
+      *ngIf="getQuantity() === 0; else updateQuantity"
+      (click)="addToCart()"  
+      class="btn btn-secondary btn-block">Add to Cart</button>
+    <ng-template #updateQuantity>
+      <div class="row no-gutters">
+        <div class="col-2">
+          <button
+          (click)="removeFromCart()"
+            class="btn btn-secondary btn-block"> - </button>
+        </div>
+        <div class="col text-center">
+          {{ getQuantity() }} in cart
+        </div>
+        <div class="col-2">
+            <button
+            (click)="addToCart()"
+            class="btn btn-secondary btn-block"> + </button>
+        </div>
+      </div>
+    </ng-template>
+      
+    </div> -->
+  <!-- </div> -->
+</div>

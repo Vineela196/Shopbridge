@@ -1,0 +1,19 @@
+{
+    "products": [
+    {"category":"Mobiles","imageURl":"./../../assets/images/iphone6s.jpg","price":400,"Name":"iPhone6s","Description":"32 GB ROM,11.94 cm (4.7 inch) Retina HD Display,12MP Rear Camera | 5MP Front Camera,Apple A9 64-bit processor and Embedded M9 Motion Co-processor","Id":1,"Rating":4},
+    {"category":"Mobiles","imageURl":"./../../assets/images/samsung.jpg","price":350,"Name":"iIphone6s","Description":"This is an iphone6s","Id":2,"Rating":4},
+    {"category":"Mobiles","imageURl":"./../../assets/images/oneplus.png","price":450,"Name":"iIphone6s","Description":"This is an iphone6s","Id":3,"Rating":4},
+    {"category":"Mobiles","imageURl":"./../../assets/images/iphone6s.jpg","price":500,"Name":"iIphone6s","Description":"This is an iphone6s","Id":4,"Rating":4},
+    {"category":"Books","imageURl":"./../../assets/images/iphone6s.jpg","price":10,"Name":"iIphone6s","Description":"This is an iphone6s","Id":5,"Rating":4},
+    {"category":"Books","imageURl":"./../../assets/images/iphone6s.jpg","price":10,"Name":"iIphone6s","Description":"This is an iphone6s","Id":6,"Rating":4},
+    {"category":"Books","imageURl":"./../../assets/images/iphone6s.jpg","price":10,"Name":"iIphone6s","Description":"This is an iphone6s","Id":7,"Rating":4},
+    {"category":"Books","imageURl":"./../../assets/images/iphone6s.jpg","price":10,"Name":"iIphone6s","Description":"This is an iphone6s","Id":8,"Rating":4},
+    {"category":"Books","imageURl":"./../../assets/images/iphone6s.jpg","price":10,"Name":"iIphone6s","Description":"This is an iphone6s","Id":9,"Rating":4},
+    {"category":"Books","imageURl":"./../../assets/images/iphone6s.jpg","price":10,"Name":"iIphone6s","Description":"This is an iphone6s","Id":10,"Rating":4}
+    
+    ],
+    "applicationCode": 0,
+    "code": 200,
+    "message": "RETRIEVED",
+    "status": "OK"
+}

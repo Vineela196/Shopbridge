@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-3">
+        <div class="sticky-top">
+            <div class="list-group">
+                <a *ngFor="let cat of categories" class="list-group-item list-group-item-action" (click)="categoryChanged(cat)">
+                    {{cat}}
+                </a>
+              <!-- <a class="list-group-item list-group-item-action">
+             All Categories
+              </a>
+              <a class="list-group-item list-group-item-action">
+                Mobiles
+              </a>
+              <a class="list-group-item list-group-item-action">
+                Books
+              </a> -->
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="row"> 
+            <ng-container *ngFor="let p of products; let i = index">
+                <div class="col">
+                    <app-product-card [product]="p"></app-product-card>
+                </div>
+                <div *ngIf="(i + 1) % 2 === 0" class="w-100"></div>
+            </ng-container>  
+            <!-- <div class="col">
+               <div class="card">
+                    <img src="./../../assets/images/iphone6s.jpg">
+                    <div class="card-body">
+                        <div class="card-title">Mbname</div>
+                        <div class="card-text">Description cmes here</div>
+                    </div>
+               </div>
+            </div> -->
+        </div>
+    </div>
+
+</div>
