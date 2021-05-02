@@ -21,6 +21,20 @@ export class ProductServiceService  {
   );
   }
 
+  getProductById=(id)=>{
+    return this.http.get('./../assets/data/products.json').pipe(
+      map((resp: any) => {
+          if (resp) {
+              let prod = resp.products.filter(p=>p.Id==id);
+              console.log(prod,"matched product");
+              return prod[0];
+          } else {
+              return false;
+          }
+      })
+  );
+  }
+
   createProduct =(product)=>{
     return this.http.get('./../assets/data/products.json').pipe(
       map((resp: any) => {

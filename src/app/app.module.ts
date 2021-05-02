@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from  '@angular/forms';
 
 import { ProductServiceService } from './product-service.service';
-
+import { DataTableModule } from 'angular5-data-table';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -27,10 +27,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    DataTableModule.forRoot(),
     RouterModule.forRoot([
       {path:'',component:ProductsComponent},
       {path:'adminproducts',component:AdminproductComponent},
-      {path:'products/new',component:ProductFormComponent}
+      {path:'products/new',component:ProductFormComponent},
+      {path:'admin/products/:id', component:ProductFormComponent}
     ]),
     NgbModule
   ],
